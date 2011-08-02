@@ -216,18 +216,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ##Added Files for bootsound and themes
 PRODUCT_COPY_FILES += \
     device/huawei/ascend/include/app/RoverCyan.apk:system/app/RoverCyan.apk \
-
-PRODUCT_COPY_FILES += \
     device/huawei/ascend/include/app/com.mike.theme.hc3d3d-1.apk:system/app/com.mike.theme.hc3d3d-1.apk \
-
-PRODUCT_COPY_FILES += \
+    device/huawei/ascend/include/app/DarkADBWireless-v1.apk:system/app/DarkADBWireless-v1.apk \
+    device/huawei/ascend/include/com.elgubbo.a2sdGUI-1.apk:system/app/com.elgubbo.a2sdGUI-1.apk \
     device/huawei/ascend/include/bin/bootsound:system/bin/bootsound \
-
-PRODUCT_COPY_FILES += \
     device/huawei/ascend/include/media/audio/ui/android_audio.mp3:system/media/audio/ui/android_audio.mp3 \
     device/huawei/ascend/include/media/bootanimation.zip:system/media/bootanimation.zip \
+    device/huawei/ascend/include/etc/init.local.rc:system/etc/init.local.rc 
 
+##Screen Rotation Fix
+#    device/huawei/ascend/include/lib/libui.so:system/lib/libui.so
+
+##No Ads Host file
 PRODUCT_COPY_FILES += \
-    device/huawei/ascend/include/etc/init.local.rc:system/etc/init.local.rc \
-    device/huawei/acend/include/etc/hosts:system/etc/hosts \
-    device/huawei/ascend/include/lib/libui.so:system/lib/libui.so
+    device/huawei/ascend/include/etc/hosts:system/etc/hosts
