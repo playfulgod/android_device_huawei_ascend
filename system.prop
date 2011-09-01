@@ -1,0 +1,26 @@
+#
+# system.prop for ascend
+#
+
+rild.libpath=/system/lib/libril-qc-1.so
+rild.libargs=-d /dev/smd0
+DEVICE_PROVISIONED=1
+
+# The interfaces to get DNS data from when using mobile data
+# Comma-separated
+mobiledata.interfaces=rmnet0,rmnet1,rmnet2
+
+# Allow or deny tethering.
+ro.tether.denied=false
+
+# Disable fs check on boot by default.
+sys.checkfs.fat=false
+
+# Increase SKIA decode memory capability for progressive jpg file.
+ro.media.dec.jpeg.memcap=20000000
+
+# This will go away someday.
+# Debugging oem_rpc_svc.
+ro.confg.hw_appsbootversion=M860V100R001C177B617_APPSBOOT
+ro.confg.hw_appversion=M860V100R001C177B617_KERNEL
+ro.confg.hw_appfsversion=M860V100R001C177B617_SYSIMG
