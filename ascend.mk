@@ -147,7 +147,8 @@ PRODUCT_COPY_FILES += \
 # Lights and graphics
 PRODUCT_COPY_FILES += \
     vendor/huawei/ascend/proprietary/lib/hw/gralloc.msm7k.so:system/lib/hw/gralloc.msm7k.so \
-    vendor/huawei/ascend/proprietary/lib/hw/lights.msm7k.so:system/lib/hw/lights.msm7k.so
+    vendor/huawei/ascend/proprietary/lib/hw/lights.msm7k.so:system/lib/hw/lights.msm7k.so \
+    vendor/huawei/ascend/proprietary/lib/hw/lights.glacier.so:system/lib/hw/lights.glacier.so
 
 # Sensors
 PRODUCT_COPY_FILES += \
@@ -223,6 +224,35 @@ PRODUCT_COPY_FILES += \
     device/huawei/ascend/include/media/audio/ui/android_audio.mp3:system/media/audio/ui/android_audio.mp3 \
     device/huawei/ascend/include/media/bootanimation.zip:system/media/bootanimation.zip \
     device/huawei/ascend/include/etc/init.local.rc:system/etc/init.local.rc 
+
+## Dark Tremors apps2sd
+PRODUCT_COPY_FILES += \
+    device/huawei/ascend/include/apps2sd_files/data/dtinstall.launch:data/dtinstall.launch \
+    device/huawei/ascend/include/apps2sd_files/data/jit/bin/dalvikvm:data/jit/bin/dalvikvm \
+    device/huawei/ascend/include/apps2sd_files/data/jit/lib/libdvm.so:data/jit/lib/libdvm.so \
+    device/huawei/ascend/include/apps2sd_files/data/jit/lib/libnativehelper.so:data/jit/lib/libnativehelper.so \
+    device/huawei/ascend/include/apps2sd_files/system/bin/a2sd:system/bin/a2sd \
+    device/huawei/ascend/include/apps2sd_files/system/bin/apps2sd.hlp:system/bin/apps2sd.hlp \
+    device/huawei/ascend/include/apps2sd_files/system/bin/bash:system/bin/bash \
+    device/huawei/ascend/include/apps2sd_files/system/bin/busybox.a2sd:system/bin/busybox.a2sd \
+    device/huawei/ascend/include/apps2sd_files/system/bin/chka2sd:system/bin/chka2sd \
+    device/huawei/ascend/include/apps2sd_files/system/bin/dtinstall:system/bin/dtinstall \
+    device/huawei/ascend/include/apps2sd_files/system/bin/jita2sd:system/bin/jita2sd \
+    device/huawei/ascend/include/apps2sd_files/system/bin/launcha2sd:system/bin/launcha2sd \
+    device/huawei/ascend/include/apps2sd_files/system/bin/starta2sd:system/bin/starta2sd \
+    device/huawei/ascend/include/apps2sd_files/system/bin/sysinit:system/bin/sysinit \
+    device/huawei/ascend/include/apps2sd_files/system/bin/zipalign:system/bin/zipalign \
+    device/huawei/ascend/include/apps2sd_files/system/etc/init.d/00banner:system/etc/init.d/00banner \
+    device/huawei/ascend/include/apps2sd_files/system/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
+    device/huawei/ascend/include/apps2sd_files/system/etc/init.d/02firstboot:system/etc/init.d/02firstboot \
+    device/huawei/ascend/include/apps2sd_files/system/etc/init.d/04apps2sd:system/etc/init.d/01apps2sd \
+    device/huawei/ascend/include/apps2sd_files/system/etc/init.d/99complete:system/etc/init.d/99complete \
+    device/huawei/ascend/include/apps2sd_files/system/sd/placeholder:system/sd/placeholder \
+    device/huawei/ascend/include/apps2sd_files/system/xbin/a2sd:system/xbin/a2sd \
+    device/huawei/ascend/include/apps2sd_files/system/xbin/apps2sd:system/xbin/apps2sd \
+    device/huawei/ascend/include/apps2sd_files/move_cache_sd:root/move_cache_sd \
+    device/huawei/ascend/include/apps2sd_files/apps2sd_run_program:root/apps2sd_run_program \
+    device/huawei/ascend/include/apps2sd_files/apps2sd_system:root/apps2sd_system
 
 ##Screen Rotation Fix
 #    device/huawei/ascend/include/lib/libui.so:system/lib/libui.so
