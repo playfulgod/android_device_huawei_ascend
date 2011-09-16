@@ -33,7 +33,7 @@ Depending on your connection, this might take awhile.
 Extract necessary binaries and proprietary files
 ------------------------------------------------
 
-We will need to reuse some proprietary files. The best ROM to obtain these from is a build of CM7-Ascend (05012011 or later). The Tapout ROM can also be used:
+We will need to reuse some proprietary files. The best ROM to obtain these from is a build of CM7-Ascend (05012011 or later). The Tapout ROM can also be used or the 2.2 update:
 
     $ cd
     
